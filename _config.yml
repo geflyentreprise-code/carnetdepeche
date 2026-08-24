@@ -1,0 +1,36 @@
+# CarnetPêche - Configuration GitHub Pages
+
+# Site metadata
+title: CarnetPêche
+description: Votre guide complet des parcours de pêche en France
+baseurl: /carnetdepeche
+url: https://geflyentreprise-code.github.io/carnetdepeche
+lang: fr
+
+# GitHub Pages theme
+theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Exclude files from build
+exclude:
+  - .gitignore
+  - README.md
+  - LICENSE
+  - node_modules/
+  - .env
+  - .env.local
+
+# Collections
+collections_dir: collections
+
+# Output
+permalink: /:categories/:year/:month/:day/:title:output_ext
+timezone: Europe/Paris
